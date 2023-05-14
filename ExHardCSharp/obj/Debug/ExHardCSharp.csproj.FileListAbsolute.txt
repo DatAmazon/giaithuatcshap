@@ -1,0 +1,7 @@
+F:\Ex\ExBasicCSharp\ExHardCSharp\bin\Debug\ExHardCSharp.exe.config
+F:\Ex\ExBasicCSharp\ExHardCSharp\bin\Debug\ExHardCSharp.exe
+F:\Ex\ExBasicCSharp\ExHardCSharp\bin\Debug\ExHardCSharp.pdb
+F:\Ex\ExBasicCSharp\ExHardCSharp\obj\Debug\ExHardCSharp.csproj.AssemblyReference.cache
+F:\Ex\ExBasicCSharp\ExHardCSharp\obj\Debug\ExHardCSharp.csproj.CoreCompileInputs.cache
+F:\Ex\ExBasicCSharp\ExHardCSharp\obj\Debug\ExHardCSharp.exe
+F:\Ex\ExBasicCSharp\ExHardCSharp\obj\Debug\ExHardCSharp.pdb

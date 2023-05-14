@@ -1,0 +1,7 @@
+F:\Ex\ExBasicCSharp\Fibo\bin\Debug\Fibo.exe.config
+F:\Ex\ExBasicCSharp\Fibo\bin\Debug\Fibo.exe
+F:\Ex\ExBasicCSharp\Fibo\bin\Debug\Fibo.pdb
+F:\Ex\ExBasicCSharp\Fibo\obj\Debug\Fibo.csproj.AssemblyReference.cache
+F:\Ex\ExBasicCSharp\Fibo\obj\Debug\Fibo.csproj.CoreCompileInputs.cache
+F:\Ex\ExBasicCSharp\Fibo\obj\Debug\Fibo.exe
+F:\Ex\ExBasicCSharp\Fibo\obj\Debug\Fibo.pdb

@@ -1,0 +1,7 @@
+F:\Ex\ExBasicCSharp\ExMediumCSharp\bin\Debug\ExMediumCSharp.exe.config
+F:\Ex\ExBasicCSharp\ExMediumCSharp\bin\Debug\ExMediumCSharp.exe
+F:\Ex\ExBasicCSharp\ExMediumCSharp\bin\Debug\ExMediumCSharp.pdb
+F:\Ex\ExBasicCSharp\ExMediumCSharp\obj\Debug\ExMediumCSharp.csproj.CoreCompileInputs.cache
+F:\Ex\ExBasicCSharp\ExMediumCSharp\obj\Debug\ExMediumCSharp.exe
+F:\Ex\ExBasicCSharp\ExMediumCSharp\obj\Debug\ExMediumCSharp.pdb
+F:\Ex\ExBasicCSharp\ExMediumCSharp\obj\Debug\ExMediumCSharp.csproj.AssemblyReference.cache
