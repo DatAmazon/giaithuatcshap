@@ -5,128 +5,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExBasicCSharp
+namespace ExEasyCSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-            //int input;
-            //do
-            //{
-            //    Console.WriteLine("------------o0o-----------");
-            //    Console.Write("Moi ban nhap cau can kiem tra: ");
-            //    input = Int32.Parse(Console.ReadLine());
-            //    switch (input)
-            //    {
-            //        case 1:
-            //            Console.WriteLine("Ham hoan doi gia tri 3 so:");
-            //            Console.Write("Nhap so a: ");
-            //            float a = float.Parse(Console.ReadLine());
-            //            Console.Write("Nhap so b: ");
-            //            float b = float.Parse(Console.ReadLine());
-            //            Console.Write("Nhap so c: ");
-            //            float c = float.Parse(Console.ReadLine());
-            //            changeLocation3Nums(a, b, c);
-            //            break;
-            //        case 2:
-            //            Console.WriteLine("Tinh gia tri a^b:");
-            //            Console.Write("Nhap so a: ");
-            //            int a2 = Int32.Parse(Console.ReadLine());
-            //            Console.Write("Nhap so mu b: ");
-            //            int b2 = Int32.Parse(Console.ReadLine());
-            //            powAB(a2, b2);
-            //            break;
-            //        case 3:
-            //            Console.WriteLine("Ham tinh tinh dong nhat chan le cua 2 so:");
-            //            Console.Write("Nhap so a: ");
-            //            int a3 = Int32.Parse(Console.ReadLine());
-            //            Console.Write("Nhap so mu b: ");
-            //            int b3 = Int32.Parse(Console.ReadLine());
-            //            checkParity(a3, b3);
-            //            break;
-            //        case 4:
-            //            Console.WriteLine("So luong so chan trong mang la: " + countEvenNumber());
-            //            break;
-            //        case 5:
-            //            Console.WriteLine("So luong so chan trong mang la: " + countOddNumbers());
-            //            break;
-            //        case 6:
-            //            Console.WriteLine("Tong cua cac so chan trong mang la: " + sumEvenNumber());
-            //            break;
-            //        case 7:
-            //            Console.WriteLine("Tong cua cac so le trong mang la: " + sumOddNumber());
-            //            break;
-            //        case 8:
-            //            Console.WriteLine("Ham kiem tra so  nguyen to:");
-            //            Console.Write("Nhap so can kiem tra: ");
-            //            int a8 = Int32.Parse(Console.ReadLine());
-            //            checkPrimest(a8);
-            //            break;
-            //        case 9:
-            //            Console.WriteLine("Ham tim so du cua a chia b:");
-            //            Console.Write("Nhap so a: ");
-            //            int a9 = Int32.Parse(Console.ReadLine());
-            //            Console.Write("Nhap so b: ");
-            //            int b9 = Int32.Parse(Console.ReadLine());
-            //            Console.WriteLine("so du " + getRemainder(a9, b9));
-            //            break;
-
-            //        case 10:
-            //            Console.WriteLine("Gia tri lon nhat trong mang la:" + findBigest());
-            //            break;
-            //        case 11:
-            //            Console.WriteLine("Gia tri nho nhat trong mang la:" + findSmallest());
-            //            break;
-            //        case 12:
-            //            Console.WriteLine("Gia tri trung binh trong mang la:" + averageArr());
-            //            break;
-            //        case 13:
-            //            reverseArr();
-            //            break;
-            //        case 14:
-            //            Console.WriteLine("Tim vị tri cua so a trong 1 mang");
-            //            Console.Write("Nhap so a: ");
-            //            int a14 = Int32.Parse(Console.ReadLine());
-            //            Console.WriteLine("vi tri dau tien cua a la: " + findLocationNumberAInArrB(a14));
-            //            break;
-            //        case 15:
-            //            Console.WriteLine("Tim giai thua cua so n");
-            //            Console.Write("Nhap so n: ");
-            //            int n15 = Int32.Parse(Console.ReadLine());
-            //            Console.WriteLine(n15 + "giai thua bang: " + factorial(n15));
-            //            break;
-            //        case 0:
-            //            Console.WriteLine("");
-            //            Console.WriteLine("Da thoat");
-            //            Console.WriteLine("");
-            //            break;
-            //        default:
-            //            Console.WriteLine("Khong ton tai, vui long chon lai");
-            //            break;
-            //    }
-            //} while (input != 0);
-            powABCTest();
-            changeLocation3NumsTest();
-            checkPartyTest();
-            countEvenNumberTest();
-            countOddNumbersTest();
-            sumEvenNumberTest();
-            sumOddNumberTest();
-            checkPrimestTest();
-            getRemainderTest();
-            findSmallestTest();
-            findBigestTest();
-            averageArrTest();
-            reverseArrTest();
-            findLocationNumberAInArrBTest();
-            factorialTest();
-
-
+            Exercise1Test();
+            Exercise2Test();
+            Exercise3Test();
+            Exercise4Test();
+            Exercise5Test();
+            Exercise6Test();
+            Exercise7Test();
+            Exercise8Test();
+            Exercise9Test();
+            Exercise11Test();
+            Exercise10Test();
+            Exercise12Test();
+            Exercise13Test();
+            Exercise14Test();
+            Exercise15Test();
+            Console.WriteLine("khong co loi gi");
         }
-
-        static float[] changeLocation3Nums(float a, float b, float c)
+        //Swap the values of 3 numbers a, b and c
+        static float[] Exercise1(float a, float b, float c)
         {
             float d;
             d = c;
@@ -136,7 +39,7 @@ namespace ExBasicCSharp
             float[] result = new float[] { a, b, c };
             return result;
         }
-        static void changeLocation3NumsTest()
+        static void Exercise1Test()
         {
             object[] testData1 = new object[] { 3f, 4f, 5f, 5f, 3f, 4f, "Test case easy 01 - 01 - doi cho 3 so duong" };
             object[] testData2 = new object[] { 1.2f, -3.4f, 5.6f, 5.6f, 1.2f, -3.4f, "Test case easy 01 - 02 - doi cho 3 so thap phan" };
@@ -147,12 +50,12 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(Enumerable.SequenceEqual(changeLocation3Nums((float)testDataItem[0], (float)testDataItem[1], (float)testDataItem[2]), new float[] { (float)testDataItem[3], (float)testDataItem[4], (float)testDataItem[5] }), (string)testDataItem[6]);
+                Debug.Assert(Enumerable.SequenceEqual(Exercise1((float)testDataItem[0], (float)testDataItem[1], (float)testDataItem[2]), new float[] { (float)testDataItem[3], (float)testDataItem[4], (float)testDataItem[5] }), (string)testDataItem[6]);
             }
 
         }
-
-        static double powAB(int a, int b)
+        //Calculate a to the power of b
+        static double Exercise2(int a, int b)
         {
             int c = 1;
             if (b == 0)
@@ -168,13 +71,11 @@ namespace ExBasicCSharp
                 for (int i = 1; i <= b; i++)
                 {
                     c = c * a;
-
                 }
                 return c;
             }
-
         }
-        static void powABCTest()
+        static void Exercise2Test()
         {
             object[] testData1 = new object[4] { 2, 5, 32f, "Test case easy 02 - 01 - mu hai so duong" };
             object[] testData2 = new object[4] { 5, 0, 1f, "Test case easy 02 - 02 - mu 0" };
@@ -185,11 +86,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(powAB((int)testDataItem[0], (int)testDataItem[1]) == (float)testDataItem[2], (string)testDataItem[3]);
+                Debug.Assert(Exercise2((int)testDataItem[0], (int)testDataItem[1]) == (float)testDataItem[2], (string)testDataItem[3]);
             }
         }
-
-        static string checkParity(int a, int b)
+        //Check the parity uniformity of 2 numbers
+        static string Exercise3(int a, int b)
         {
             int c = a + b;
             string res = "";
@@ -203,6 +104,7 @@ namespace ExBasicCSharp
                 {
                     res += "cung le";
                 }
+                //res += (a % 2 == 0) ? "cung chan" : "cung le";
             }
             else
             {
@@ -210,8 +112,7 @@ namespace ExBasicCSharp
             }
             return res;
         }
-
-        static void checkPartyTest()
+        static void Exercise3Test()
         {
             object[] testData1 = new object[4] { 2, 78, "cung chan", "Test case easy 03 - 01 - 2 so nguyen duong chan" };
             object[] testData2 = new object[4] { 9, 83, "cung le", "Test case easy 03 - 02 - 2 so nguyen duong le" };
@@ -223,11 +124,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(checkParity((int)testDataItem[0], (int)testDataItem[1]) == (string)testDataItem[2], (string)testDataItem[3]);
+                Debug.Assert(Exercise3((int)testDataItem[0], (int)testDataItem[1]) == (string)testDataItem[2], (string)testDataItem[3]);
             }
         }
-
-        static int countEvenNumber(int[] arr)
+        //Counts the number of even numbers in an array
+        static int Exercise4(int[] arr)
         {
             int eventNumber = 0;
             for (int i = 0; i < arr.Length; i++)
@@ -239,7 +140,7 @@ namespace ExBasicCSharp
             }
             return eventNumber;
         }
-        static void countEvenNumberTest()
+        static void Exercise4Test()
         {
             object[] testData1 = new object[] { new int[] { 1, 2, 3, 4, 5, 0, 6 }, 4, "Test case easy 04 - 01 - mang so nguyen duong" };
             object[] testData2 = new object[] { new int[] { 2, 4, -6, 8, -5 }, 4, "Test case easy 04 - 02 - mang so nguyen duong va am" };
@@ -249,11 +150,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(countEvenNumber((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise4((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
             }
         }
-
-        static int countOddNumbers(int[] arr)
+        //Counts the number of odd numbers in an array
+        static int Exercise5(int[] arr)
         {
             int oddNumber = 0;
             for (int i = 0; i < arr.Length; i++)
@@ -265,7 +166,7 @@ namespace ExBasicCSharp
             }
             return oddNumber;
         }
-        static void countOddNumbersTest()
+        static void Exercise5Test()
         {
             object[] testData1 = new object[] { new int[] { 1, 2, 3, 4, 5, 0, 6 }, 3, "Test case easy 05 - 01 - mang so nguyen duong" };
             object[] testData2 = new object[] { new int[] { 2, 4, -6, 8, -5 }, 1, "Test case easy 05 - 02 - mang so nguyen duong va am" };
@@ -275,11 +176,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(countOddNumbers((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise5((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
             }
         }
-
-        static int sumEvenNumber(int[] arr)
+        // Sum the even numbers in the array
+        static int Exercise6(int[] arr)
         {
             int eventNumber = 0;
             int total = 0;
@@ -293,8 +194,7 @@ namespace ExBasicCSharp
             }
             return total;
         }
-
-        static void sumEvenNumberTest()
+        static void Exercise6Test()
         {
             object[] testData1 = new object[] { new int[] { 1, 2, 3, 4, 5, 0, 6 }, 12, "Test case easy 06 - 01 - mang so nguyen duong" };
             object[] testData2 = new object[] { new int[] { 2, 4, -6, 8, -5 }, 8, "Test case easy 06 - 02 - mang so nguyen duong va am" };
@@ -304,11 +204,12 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(sumEvenNumber((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise6((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
+
             }
         }
-
-        static int sumOddNumber(int[] arr)
+        // Sum the odd numbers in the array
+        static int Exercise7(int[] arr)
         {
             int eventNumber = 0;
             int total = 0;
@@ -322,7 +223,7 @@ namespace ExBasicCSharp
             }
             return total;
         }
-        static void sumOddNumberTest()
+        static void Exercise7Test()
         {
             object[] testData1 = new object[] { new int[] { 1, 2, 3, 4, 5, 0, 6 }, 9, "Test case easy 07 - 01 - mang so nguyen duong" };
             object[] testData2 = new object[] { new int[] { 2, 4, -6, 8, -5 }, -5, "Test case easy 07 - 02 - mang so nguyen duong va am" };
@@ -332,11 +233,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(sumOddNumber((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise7((int[])testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
             }
         }
-
-        static bool checkPrimest(int a)
+        //Check primes
+        static bool Exercise8(int a)
         {
             bool check = true;
             if (a < 2)
@@ -353,8 +254,7 @@ namespace ExBasicCSharp
 
             return check;
         }
-
-        static void checkPrimestTest()
+        static void Exercise8Test()
         {
             object[] testData1 = new object[] { 0, false, "Test case easy 08 - 01 - so 0" };
             object[] testData2 = new object[] { 1, false, "Test case easy 08 - 02 - so 1" };
@@ -365,11 +265,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(checkPrimest((int)testDataItem[0]) == (bool)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise8((int)testDataItem[0]) == (bool)testDataItem[1], (string)testDataItem[2]);
             }
         }
-
-        static int getRemainder(int a, int b)
+        //Remainder of a divided by b
+        static int Exercise9(int a, int b)
         {
             int t = a;
             if (b == 0)
@@ -410,7 +310,7 @@ namespace ExBasicCSharp
             }
             return a;
         }
-        static void getRemainderTest()
+        static void Exercise9Test()
         {
             object[] testData1 = new object[] { 7, 4, 3, "Test case easy 09 - 01 - so duong chia so duong" };
             object[] testData2 = new object[] { -17, 5, -2, "Test case easy 09 - 02 - so am chia so duong" };
@@ -420,10 +320,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(getRemainder((int)testDataItem[0], (int)testDataItem[1]) == (int)testDataItem[2], (string)testDataItem[3]);
+                Debug.Assert(Exercise9((int)testDataItem[0], (int)testDataItem[1]) == (int)testDataItem[2], (string)testDataItem[3]);
             }
         }
-        static float findBigest(float[] arr)
+        //Find the largest value in an array of numbers
+        static float Exercise10(float[] arr)
         {
             //int[] arr = new int[] { -1, 2, 3, -4, 175, 0, 6 };
             float Max = arr[0];
@@ -436,7 +337,7 @@ namespace ExBasicCSharp
             }
             return Max;
         }
-        static void findBigestTest()
+        static void Exercise10Test()
         {
             object[] testData1 = new object[] { new float[] { 1f, 2f, -3f, 4f, -5f, 0f, 6f }, 6f, "Test case easy 10 - 01 - mang so nguyen" };
             object[] testData2 = new object[] { new float[] { 1f, 2f, -3.345f, 4f, -5f, 0f, 9.345f }, 9.345f, "Test case easy 10 - 01 - mang so thap phan" };
@@ -446,10 +347,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(findBigest((float[])testDataItem[0]) == (float)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise10((float[])testDataItem[0]) == (float)testDataItem[1], (string)testDataItem[2]);
             }
         }
-        static float findSmallest(float[] arr)
+        //Find the largest value in an array of numbers
+        static float Exercise11(float[] arr)
         {
             //int[] arr = new int[] { -1, 2, 3, -4, 175, 0, 6 };
             float Min = arr[0];
@@ -462,7 +364,7 @@ namespace ExBasicCSharp
             }
             return Min;
         }
-        static void findSmallestTest()
+        static void Exercise11Test()
         {
             object[] testData1 = new object[] { new float[] { 1f, 2f, -3f, 4f, -5f, 0f, 6f }, -5f, "Test case easy 11 - 01 - mang so nguyen" };
             object[] testData2 = new object[] { new float[] { 1f, 2f, -3.345f, 4f, -5f, 0f, 9.345f }, -5f, "Test case easy 11 - 01 - mang so thap phan" };
@@ -472,10 +374,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(findSmallest((float[])testDataItem[0]) == (float)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise11((float[])testDataItem[0]) == (float)testDataItem[1], (string)testDataItem[2]);
             }
         }
-        static double averageArr(float[] arr)
+        //Find the mean of an array of numbers
+        static double Exercise12(float[] arr)
         {
             float sum = 0;
             int length = arr.Length;
@@ -485,7 +388,7 @@ namespace ExBasicCSharp
             }
             return (double)sum / length;
         }
-        static void averageArrTest()
+        static void Exercise12Test()
         {
             object[] testData1 = new object[] { new float[] { 1f, 6f, -3f, 4f, -5f, 0f, 18f }, 3f, "Test case easy 12 - 01 - mang so nguyen" };
             object[] testData2 = new object[] { new float[] { 16f, 4f, 4f, -3.5f, 3f, 5f, 0f, -4.5f }, 3f, "Test case easy 12 - 01 - mang so thap phan" };
@@ -495,10 +398,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(averageArr((float[])testDataItem[0]) == (float)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise12((float[])testDataItem[0]) == (float)testDataItem[1], (string)testDataItem[2]);
             }
         }
-        static float[] reverseArr(float[] arr)
+        //Reverse order of numbers in array
+        static float[] Exercise13(float[] arr)
         {
             int length = arr.Length;
             for (int i = 0; i < length / 2; i++)
@@ -509,7 +413,7 @@ namespace ExBasicCSharp
             }
             return arr;
         }
-        static void reverseArrTest()
+        static void Exercise13Test()
         {
             object[] testData1 = new object[] { new float[] { 1f, 2f, 3f }, new float[] { 3f, 2f, 1f }, "Test case easy 13 - 01 - mang so nguyen duong" };
             object[] testData2 = new object[] { new float[] { 2f, 4f, -6f, 8f, -5f }, new float[] { -5f, 8f, -6f, 4f, 2f }, "Test case easy 13 - 02 - mang so nguyen duong va am" };
@@ -519,10 +423,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(Enumerable.SequenceEqual(reverseArr((float[])testDataItem[0]), (float[])testDataItem[1]), (string)testDataItem[2]);
+                Debug.Assert(Enumerable.SequenceEqual(Exercise13((float[])testDataItem[0]), (float[])testDataItem[1]), (string)testDataItem[2]);
             }
         }
-        static int findLocationNumberAInArrB(float[] b, float a)
+        //Find the position of a number in an array of numbers
+        static int Exercise14(float[] b, float a)
         {
             //int[] b = new int[] { -4, 3, 0, 6, 15 };
             int position = -1;
@@ -536,8 +441,7 @@ namespace ExBasicCSharp
             }
             return position;
         }
-
-        static void findLocationNumberAInArrBTest()
+        static void Exercise14Test()
         {
             object[] testData1 = new object[] { new float[] { 1f, 2f, 3f }, 3f, 2, "Test case easy 14 - 01 - mang so nguyen duong" };
             object[] testData2 = new object[] { new float[] { 2f, 4f, -6f, 8f, -5f }, 8f, 3, "Test case easy 14 - 02 - mang so nguyen duong va am" };
@@ -547,10 +451,11 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(findLocationNumberAInArrB((float[])testDataItem[0], (float)testDataItem[1]) == (int)testDataItem[2], (string)testDataItem[3]);
+                Debug.Assert(Exercise14((float[])testDataItem[0], (float)testDataItem[1]) == (int)testDataItem[2], (string)testDataItem[3]);
             }
         }
-        static int factorial(int n)
+        //Exercise15 function
+        static int Exercise15(int n)
         {
             int result = 1;
             if (n < 0)
@@ -571,7 +476,7 @@ namespace ExBasicCSharp
             }
 
         }
-        static void factorialTest()
+        static void Exercise15Test()
         {
             object[] testData1 = new object[] { 4, 24, "Test case easy 15 - 01 - so nguyen duong" };
             object[] testData2 = new object[] { 1, 1, "Test case easy 15 - 02 - so 1" };
@@ -582,10 +487,8 @@ namespace ExBasicCSharp
             for (int i = 0; i < testData.Length; i++)
             {
                 object[] testDataItem = testData[i];
-                Debug.Assert(factorial((int)testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
+                Debug.Assert(Exercise15((int)testDataItem[0]) == (int)testDataItem[1], (string)testDataItem[2]);
             }
         }
-
-
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BCD3A7D-DBBD-4ED7-8EC7-A3B27FE07555}</ProjectGuid>
+    <ProjectGuid>{91E66907-AB22-4035-9230-06B6B8ADFEF2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ExHardCSharp</RootNamespace>
-    <AssemblyName>ExHardCSharp</AssemblyName>
+    <RootNamespace>program</RootNamespace>
+    <AssemblyName>program</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExHardProgram.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

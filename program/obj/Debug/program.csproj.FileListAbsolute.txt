@@ -1,0 +1,7 @@
+F:\Ex\ExBasicCSharp\program\obj\Debug\program.csproj.AssemblyReference.cache
+F:\Ex\ExBasicCSharp\program\obj\Debug\program.csproj.CoreCompileInputs.cache
+F:\Ex\ExBasicCSharp\program\bin\Debug\program.exe.config
+F:\Ex\ExBasicCSharp\program\bin\Debug\program.exe
+F:\Ex\ExBasicCSharp\program\bin\Debug\program.pdb
+F:\Ex\ExBasicCSharp\program\obj\Debug\program.exe
+F:\Ex\ExBasicCSharp\program\obj\Debug\program.pdb

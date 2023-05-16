@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExBasicCSharp", "ExBasicCSharp\ExBasicCSharp.csproj", "{E98B5B4D-0A40-463F-ACCD-F7B5CB6C11C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEasyCSharp", "ExBasicCSharp\ExEasyCSharp.csproj", "{E98B5B4D-0A40-463F-ACCD-F7B5CB6C11C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExMediumCSharp", "ExMediumCSharp\ExMediumCSharp.csproj", "{F9A16A4C-50FC-426A-A075-064F836B2CB8}"
 EndProject
